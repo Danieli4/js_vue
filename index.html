@@ -8,7 +8,12 @@
     <title>JAVASCRIPT</title>
 </head>
 <body>
-
+<div class="box">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aperiam asperiores atque ea eos fugit, in magni molestias mollitia neque non numquam, optio qui quibusdam quisquam repellendus, repudiandae veritatis voluptatibus!
+</div>
+<div>
+    <button class="btn" onclick="sayHello()">Click me</button>
+</div>
 </body>
 </html>
 <style>
@@ -16,5 +21,85 @@
 
 </style>
 <script>
-    alert('Hello!')
+    let $box = document.querySelector('.box');
+    console.log($box);
+
+    function sayHello() {
+        $box.remove();
+    }
+
+
+
+
+
+
+    // <!--    old style-->
+    // var someString = 'String'; //this variable scope in all functions in file
+    //
+    // //     Modern style
+    // let someString2 = 'String2';
+    // const someString3 = 'String3'
+    //
+    // console.log(someString2);
+    //
+    // let someString4 = 'string';
+    // let someNum = 100;
+    // let someBoolean = false;
+    // let someNull = null;
+    // let someNun = NaN;
+    // let someUndefined = undefined;
+    //
+    // console.log(someNun);
+    //
+    //
+    // let someArray = ['asdasd', 356458, true];
+    // console.log(someArray);
+    //
+    // let someObj = {
+    //     sommeKey: 'asdasd',
+    //     secondKey: 356458,
+    //     thirdKey: true,
+    //     someArray:[100, 'string']
+    // }
+    //
+    // console.log(someObj);
+    //
+    // function someFunc() {
+    //     return 'some string from function'
+    // }
+    //
+    // console.log(someFunc());
+    //
+    // // THis function not reserv in memory compiler
+    // let anotherFunc = function () {
+    //     return 'this another function';
+    // };
+    //
+    // console.log(anotherFunc());
+    //
+    // if (someBoolean) {
+    //     console.log('hello');
+    // } else {
+    //     console.log('not hello')
+    // }
+    //
+    // let person = someBoolean ? 'Ivan' : 'Dimon';
+    // console.log(person);
+    //
+    // let someArr = ['Ivan', 'Dimon', "Petya"]
+    //
+    // someArr.forEach(function (item, index) {
+    //     console.log(item, index);
+    // });
+    //
+    // for (let someObjKey in someObj) {
+    //     console.log(someObj [someObjKey]);
+    // }
+    //
+    // console.log(Object.entries(someObj));
+    //
+    // Object.entries(someObj).forEach(function (item) {
+    //     console.log(item);
+    // });
+
 </script>
