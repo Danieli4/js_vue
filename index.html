@@ -18,15 +18,25 @@
 </html>
 <style>
 
-
 </style>
 <script>
-    let $box = document.querySelector('.box');
-    console.log($box);
-
-    function sayHello() {
-        $box.remove();
+    let obj={
+        name: 'Ivan',
+        age: 20,
+        sayHello: function () {
+            console.log('Hello');
+        },
     }
+    console.log(obj.name);
+    obj.sayHello();
+
+
+    // let $box = document.querySelector('.box');
+    // console.log($box);
+    //
+    // function sayHello() {
+    //     $box.remove();
+    // }
 
 
 
